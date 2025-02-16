@@ -1,0 +1,19 @@
+composer install     
+
+composer create-project laravel/laravel nombredelproyecto
+
+-------------------------------------------------------
+
+SI ya esta laravel instalado se usa 
+
+laravel new nombredelproyecto
+
+si ya esta todo ajustar la base de datos en el archivo .env
+-verificar la base de datos
+-php artisan migrate
+
+migrar los datos
+
+
+--------------------correr laravel---------------
+php artisan serve
