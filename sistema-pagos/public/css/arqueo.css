@@ -1,0 +1,204 @@
+/* Archivo: arqueo.css */
+
+/* Mantener el formulario fijo en la pantalla */
+.container {
+    position: fie;
+   
+}
+
+/* Estilo para las imágenes de billetes y monedas */
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de animación al pasar el cursor */
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para los botones */
+.btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ddd;
+}
+
+.btn-primary {
+    animation: bounce 0.5s ease infinite;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Estilos específicos para los números y total */
+input[type="number"] {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Añadir espacio dentro de los inputs */
+    box-sizing: border-box; /* Para incluir el padding en el tamaño total */
+    margin-bottom: 10px; /* Separación entre campos */
+}
+
+input[type="number"]:focus {
+    background-color: #fff;
+    border-color: #4CAF50;
+}
+
+/* Resaltar el total */
+#total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    background-color: #e8f5e9;
+}
+
+/* Resaltar las primas con colores */
+#producto,
+#prima,
+#pago_prima {
+    background-color: #f1f8e9;
+    transition: background-color 0.3s;
+}
+
+#producto:focus,
+#prima:focus,
+#pago_prima:focus {
+    background-color: #e8f5e9;
+}
+
+/* Estilo para la lista de primas */
+#lista_primas li {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#lista_primas li:hover {
+    background-color: #e8f5e9;
+}
+
+/* Botones de acción en la lista de primas */
+#lista_primas li button {
+    transition: background-color 0.3s;
+}
+
+#lista_primas li button:hover {
+    background-color: #ff5722;
+}
+
+/* Efectos de color en el arqueo */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Colores para los botones de arqueo */
+#arqueo-inc, #arqueo-dec {
+    background-color: #8bc34a;
+    color: white;
+}
+
+#arqueo-inc:active {
+    background-color: #388e3c;
+}
+
+#arqueo-dec:active {
+    background-color: #e53935;
+}
+
+/* Estilo para el resumen */
+.col-md-4 h4 {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #3e8e41;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Diseño de fila de billetes y monedas */
+.row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Ajustar el tamaño de los inputs */
+input[type="number"] {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Animación al agregar y eliminar primas */
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#lista_primas li {
+    animation: slide-in 0.5s ease-out;
+}
+
+#lista_primas li.removed {
+    animation: slide-out 0.5s ease-in;
+}
+
+/* Aplicar color dinámico para los campos numéricos de arqueo */
+input[type="number"] {
+    background-color: #f1f8e9;
+}
+
+/* Estilos para la visualización de los campos */
+form div {
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas de los campos */
+label {
+    font-weight: bold;
+    color: #333;
+}
+/* Estilo para el botón "Guardar Arqueo" en la esquina inferior izquierda */
+#guardar-arqueo {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    left: 100px;   /* Ajusta la distancia desde la parte izquierda */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
