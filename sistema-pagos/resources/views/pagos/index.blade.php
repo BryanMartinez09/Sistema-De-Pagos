@@ -6,6 +6,7 @@
         <h3>Lista</h3>
         <h4>Aprobaciones</h4>
         <h5>Listados completos</h5>
+        <h6>List</h6>
         <table class="table">
             <thead>
                 <tr>
