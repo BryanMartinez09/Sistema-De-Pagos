@@ -3,6 +3,7 @@
 @section('content')
     <div class="container">
         <h2>PAGOS</h2>
+        <h3>Lista</h3>
         <table class="table">
             <thead>
                 <tr>
