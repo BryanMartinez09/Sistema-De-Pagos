@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h2>Lista de Pagos </h2>
+        <h2>PAGOS</h2>
         <table class="table">
             <thead>
                 <tr>
