@@ -4,6 +4,7 @@
     <div class="container">
         <h2>PAGOS</h2>
         <h3>Lista</h3>
+        <h4>Aprobaciones</h4>
         <table class="table">
             <thead>
                 <tr>
