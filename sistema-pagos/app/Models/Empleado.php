@@ -16,4 +16,9 @@ class Empleado extends Model
     {
         return $this->hasMany(Arqueo::class);
     }
+    public function pagos()
+{
+    return $this->hasMany(Pago::class);
+}
+
 }
