@@ -2,7 +2,10 @@
 
 @section('content')
     <div class="container">
-        <h2>Lista de Pagos </h2>
+        <h2>PAGOS</h2>
+        <h3>Lista</h3>
+        <h4>Aprobaciones</h4>
+        <h5>Listados completos</h5>
         <table class="table">
             <thead>
                 <tr>
